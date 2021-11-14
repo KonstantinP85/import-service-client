@@ -1,0 +1,31 @@
+{
+  "name": "kp/import-service-api",
+  "version": "1.1",
+  "description": "Client for working with upload data",
+  "type": "library",
+  "license": "proprietary",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../microservice-api"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "kp/microservice-api": "^1.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "kp\\MicroserviceApi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "kp\\MicroserviceApi\\Tests\\": "tests/"
+    }
+  }
+}
